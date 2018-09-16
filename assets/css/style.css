@@ -1,0 +1,13 @@
+*  {
+    box-sizing: border-box;
+    }
+
+body {
+    background-image: url("../images/gym-background.png");
+    background-repeat: no-repeat;
+    background-size:960px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
