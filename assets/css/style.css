@@ -10,4 +10,12 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: 'Fira Mono', monospace;
+}
+.navbar {
+    border: solid rgb(78, 77, 77) 2px;
+    color: white;
+}
+.btn {
+    color:#352F1A;
 }
