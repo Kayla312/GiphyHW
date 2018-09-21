@@ -15,7 +15,12 @@ body {
 .navbar {
     border: solid rgb(78, 77, 77) 2px;
     color: white;
+    font-size: 25px;
 }
 .btn {
-    color:#352F1A;
+    color:#8C864D;
+}
+/* changes the color of the new ratings of gifs loaded so that they are visible */
+p {
+    color:#8C864D;
 }
