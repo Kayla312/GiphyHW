@@ -25,7 +25,7 @@ $(document).ready(function() {
       //Create div with respective still and animate image sources with "data-state", "data-still" and "data-animate" attributes
          function displayFitnessGifs() {
     
-        var x = $(this).data("search");
+        var x = $(this).data("data-type");
         console.log(x);
     
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=zjVgoI8NKBNje4CZBp1SB1AGl47tTgEG&limit=10";

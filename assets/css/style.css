@@ -3,13 +3,6 @@
     }
 
 body {
-    /* background-image: url("../images/gym-background.png");
-    background-repeat: no-repeat;
-    background-size:960px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
     font-family: 'Fira Mono', monospace;
     background: url('../images/gym-background.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -19,13 +12,19 @@ body {
 }
 .navbar {
     border: solid rgb(78, 77, 77) 2px;
+    background-color:#352F1A;
     color: white;
     font-size: 25px;
 }
 .btn {
     color:#8C864D;
+    background-color: rgb(255, 255, 212);
+}
+.searchBtn{
+    margin:1%;
+    padding:1%;
 }
 /* changes the color of the new ratings of gifs loaded so that they are visible */
 p {
-    color:#8C864D;
+    color: rgba(255, 255, 212, 0.5);
 }
