@@ -60,7 +60,7 @@ $(document).ready(function() {
       //Create div with respective still and animate image sources with "data-state", "data-still" and "data-animate" attributes
     function displayFitnessGifs() {
     
-        var x = $('#addGif').attr("value");
+        var x = $('.searchBtn').attr('data-search');
 
         console.log("variable x" + x );
     
@@ -113,10 +113,6 @@ $(document).ready(function() {
             $(this).attr("data-state", "still");
           }
         };
-
-
-
-
     
       //Click event on button with class of btn executes displayFitnessGifs function
       $(document).on("click", ".btn", displayFitnessGifs);
