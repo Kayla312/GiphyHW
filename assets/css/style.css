@@ -26,5 +26,10 @@ body {
 }
 /* changes the color of the new ratings of gifs loaded so that they are visible */
 p {
-    color: rgba(255, 255, 212, 0.5);
+    color: rgba(255, 255, 212, 0.9);
+    border: solid 2px rgba(255, 255, 212, 0.5)
+}
+.niceBorder {
+    border-radius: 2%;
+    border: solid 2px rgba(231, 189, 49, 0.5)
 }
