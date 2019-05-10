@@ -20,7 +20,10 @@ $(document).ready(function() {
     console.log("working");
     //Array for searched topics to be added
     var topics = ["weights", "stretching", "yoga", "cardio"];
+
+
     
+    //Function iterates through topics array to display button with array values in "addedButtons" section of HTML
     function displayButtons() {
       $("#addedButtons").empty();
       for (var i = 0; i < topics.length; i++) {
@@ -30,7 +33,29 @@ $(document).ready(function() {
         $("#addedButtons").append(a);
       }
     };
+    // call
     displayButtons();
+
+
+
+    //Submit button click event takes search term from form input, trims and pushes to topics array, displays button
+    $("#searchNewGif").on("click", function() {
+      event.preventDefault();
+      var  newFitness = $("#addGif").val().trim();
+      topics.push(newFitness);
+      console.log("topics  " + topics);
+      $("#addGif").val('');
+      displayButtons();
+    });
+
+
+
+
+
+
+
+
+
         //Function with AJAX call to GIPHY; Q parameterc for API link set to search term, limit 10 results
       //Create div with respective still and animate image sources with "data-state", "data-still" and "data-animate" attributes
     function displayFitnessGifs() {
@@ -74,32 +99,7 @@ $(document).ready(function() {
             }
         });
     }
-    
-      //Submit button click event takes search term from form input, trims and pushes to topics array, displays button
-        $("#searchNewGif").on("click", function() {
-            // event.preventDefault();
-            var  newFitness = $("#addGif").val().trim();
-            topics.push(newFitness);
-            console.log("topics" + topics);
-            $("#addGif").val('');
-            displayButtons();
-          });
-    
-      
-      
-    //Function iterates through topics array to display button with array values in "addedButtons" section of HTML
-    //*************DONE*************
-      //   function displayButtons() {
-      //   $("#addedButtons").empty();
-      //   for (var i = 0; i < topics.length; i++) {
-      //     var a = $('<button class="btn btn-outline-secondary">');
-      //     a.attr("data-search", topics[i]);
-      //     a.text(topics[i]);
-      //     $("#addedButtons").append(a);
-      //   }
-      // };
-      // // call Display Buttons
-      // displayButtons();
+
 
     //Function accesses "data-state" attribute and depending on status, changes image source to "data-animate" or "data-still"
     //*************DONE*************
